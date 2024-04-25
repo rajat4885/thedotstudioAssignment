@@ -1,0 +1,158 @@
+@font-face {
+  font-family: Gotham;
+  src: url(./Gotham-Font/GothamMedium_1.ttf);
+}
+
+* {
+  font-family: Gotham;
+}
+
+.main {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first {
+  height: 230px;
+  width: 380px;
+  border-radius: 7px;
+
+}
+
+.second {
+  height: 230px;
+  width: 380px;
+  border-radius: 7px;
+}
+
+.up {
+  display: flex;
+  gap: 40px;
+  color: white;
+
+}
+
+.down {
+  display: flex;
+  gap: 40px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.third {
+  height: 230px;
+  width: 380px;
+  border-radius: 7px;
+}
+
+.fourth {
+  height: 230px;
+  width: 380px;
+  border-radius: 7px;
+}
+
+.heading__color {
+  color: rgb(5, 5, 169);
+}
+
+.card {
+  overflow: hidden;
+  height: 230px;
+
+}
+
+.text__color {
+  /* color: rgb(255, 219, 88); */
+  color: #F1BD55;
+  font-weight: 800;
+}
+
+.intro {
+  height: 12px;
+  width: 0px;
+  box-sizing: border-box;
+  position: relative;
+  left: 0px;
+  bottom: 60px;
+  text-align: center;
+
+}
+
+.intro1 {
+  height: 12px;
+  width: 0px;
+  box-sizing: border-box;
+  position: relative;
+  left: 0px;
+  bottom: 90px;
+  text-align: center;
+
+}
+
+
+h2 {
+  width: 380px;
+
+}
+
+h4 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .intro {
+  height: 200px;
+  width: 380px;
+  bottom: 220px;
+  background-color: #114A8D;
+  opacity: 0.9;
+  transition: all ease-out 0.8s;
+  padding-top: 30px;
+}
+
+.card:hover .intro1 {
+  height: 200px;
+  width: 380px;
+  bottom: 220px;
+  background-color: #114A8D;
+  opacity: 0.9;
+  transition: all ease-out 0.8s;
+  padding-top: 30px;
+}
+
+.card:hover h4 {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/*-------------------------------------------------RESPONSIVE------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .up {
+    display: block;
+  }
+
+  .down {
+    display: block;
+  }
+
+  .card {
+    margin-top: 1rem;
+  }
+}
